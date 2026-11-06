@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.claude/logs/
+.claude/settings.local.json
+build/
+.dart_tool/
+*.log

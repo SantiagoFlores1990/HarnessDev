@@ -1,0 +1,40 @@
+{
+  "name": "app-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "dotenv -e .env.local -- node --watch src/server.js",
+    "start": "dotenv -e .env.local -- node src/server.js",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "lint": "eslint src tests --no-error-on-unmatched-pattern",
+    "format": "prettier --write src tests",
+    "db:generate": "prisma generate",
+    "db:migrate": "dotenv -e .env.local -- prisma migrate dev",
+    "db:deploy": "dotenv -e .env.local -- prisma migrate deploy",
+    "db:seed": "dotenv -e .env.local -- node prisma/seed.js",
+    "db:studio": "dotenv -e .env.local -- prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pino": "^9.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.2",
+    "eslint": "^9.14.0",
+    "prettier": "^3.3.3",
+    "prisma": "^6.0.0",
+    "supertest": "^7.0.0",
+    "vitest": "^2.1.4"
+  }
+}
