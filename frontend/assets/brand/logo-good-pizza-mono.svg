@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Good Pizza - emblema monocromo (un solo color #0A2A5E, fondo transparente). Para impresion en una tinta, sellos o fondos claros de un color. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="gpm-title">
+  <title id="gpm-title">Good Pizza</title>
+  <circle cx="64" cy="64" r="58" fill="none" stroke="#0A2A5E" stroke-width="5"/>
+  <!-- Corteza -->
+  <path d="M24 40 Q64 20 104 40" fill="none" stroke="#0A2A5E" stroke-width="10" stroke-linecap="round"/>
+  <!-- Porcion con el pepperoni recortado (evenodd) -->
+  <path fill="#0A2A5E" fill-rule="evenodd" stroke="#0A2A5E" stroke-width="2" stroke-linejoin="round"
+        d="M30 50 Q64 36 98 50 L64 108 Z
+           M49 60 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z
+           M67 68 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0 Z
+           M58 84 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0 Z"/>
+</svg>

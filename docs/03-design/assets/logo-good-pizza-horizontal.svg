@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Good Pizza - logotipo horizontal (emblema + palabra). SOLO para documentacion y vista previa en navegador:
+     usa <text>, que flutter_svg NO renderiza. En la app, la palabra se compone con un widget Text junto al emblema. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="128" viewBox="0 0 400 128" role="img" aria-labelledby="gph-title">
+  <title id="gph-title">Good Pizza</title>
+  <g>
+    <circle cx="64" cy="64" r="60" fill="#0A2A5E"/>
+    <circle cx="64" cy="64" r="56" fill="none" stroke="#D6E3FF" stroke-width="2"/>
+    <path d="M24 40 Q64 20 104 40" fill="none" stroke="#E8A33A" stroke-width="10" stroke-linecap="round"/>
+    <path d="M30 50 Q64 36 98 50 L64 108 Z" fill="#FFD36B" stroke="#FFD36B" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="56" cy="60" r="7" fill="#D64530"/>
+    <circle cx="73" cy="68" r="6" fill="#D64530"/>
+    <circle cx="63" cy="84" r="5" fill="#D64530"/>
+  </g>
+  <text x="140" y="80" font-family="'Segoe UI', Arial, sans-serif" font-size="54" font-weight="700" fill="#0A2A5E">Good Pizza</text>
+  <text x="142" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="3" fill="#3B5A8C">PIZZERIA</text>
+</svg>

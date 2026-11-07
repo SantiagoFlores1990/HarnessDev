@@ -1,9 +1,17 @@
-# Frontend (Flutter)
+# Frontend (Flutter, solo Windows) — Good Pizza
 
-Vacío a propósito: el agente `flutter-dev` ejecuta dentro de esta carpeta
+Aplicación de escritorio Windows en español (Material 3, tema azul marino, modo claro). Consume la API REST `/api/v1` del backend de este repositorio.
+
+La guía completa (cómo ejecutar, `--dart-define`, pruebas, solución de problemas) está en [`docs/05-frontend/README.md`](../docs/05-frontend/README.md).
+
+Resumen rápido:
 
 ```
-flutter create --org com.example --platforms=android,ios,windows,linux,macos,web .
+cd frontend
+flutter pub get
+flutter run -d windows --dart-define=API_URL=http://localhost:3000/api/v1
+flutter analyze
+flutter test
 ```
 
-Requisitos locales: Flutter SDK, Android Studio (móvil), Visual Studio con "Desktop development with C++" (Windows desktop).
+Creado con `flutter create --org com.pizzeria --project-name good_pizza --platforms=windows .` (nombre visible: "Good Pizza").

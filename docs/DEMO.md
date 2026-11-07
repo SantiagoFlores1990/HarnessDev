@@ -36,14 +36,14 @@ git switch demo-base
 
 `git clean` no toca `backend/.env.local` porque está ignorado por git.
 
-Para reutilizar la misma base de datos, vacíala antes de la siguiente demo. Esto **borra todos los datos** de la base indicada en `.env.local`:
+Para reutilizar la misma base de datos, vacíala antes de la siguiente demo. Esto **borra el esquema `public` completo** de la base indicada en `.env.local`. **No lo ejecutes nunca sobre `pizzeria`**, que es la base del proyecto y no debe borrarse ni recrearse:
 
 ```bash
 cd backend
 npx dotenv -e .env.local -- prisma migrate reset
 ```
 
-Solo funciona después de que el agente cree el esquema de Prisma. Alternativa más simple: crea una base distinta por demostración (`pizzeria_demo2`) y cambia `DB_NAME` y `DATABASE_URL`.
+Alternativa recomendada, sin borrar nada: crea una base distinta por demostración (`pizzeria_demo2`) y cambia `DB_NAME` y `DATABASE_URL`. Revisa antes el nombre de la base con `psql` (`\l`).
 
 ## Qué esperar
 
